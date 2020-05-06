@@ -119,11 +119,11 @@ Groups for the user
 /******************************************
   Access resource from diff account
 ******************************************/
-Acc1 (Aakash Handa)  Sender
+Acc1 (Ramiya)  Sender
 =>IAM
     =>Role
         =>Another AWS account
-            =>Account ID(of aakash)
+            =>Account ID(ramyiya new)
                 =>Add permission(s3 full access)
                     =>RoleName
 
@@ -132,8 +132,8 @@ Acc1 (Aakash Handa)  Sender
 **Root user(reciver) cannot access any other
 **Only IAM user(reciver) can accesss any other account resource
 
->>>>>>Acc2 (Aakash)  Reciver<<<<<<<<<<<
-** Access S3 of aakashhanda account
+>>>>>>Acc2 (ramiya new)  Reciver<<<<<<<<<<<
+** Access S3 of ramiya account
 =>  Create new IAM user(with no permission no group)
     
  => Create new dummy Group(no user no policy)   
@@ -157,8 +157,8 @@ Acc1 (Aakash Handa)  Sender
 
 => Login with IAM user
     =>Swtich role
-    =>Account* (number od aakashhanda(sender) account)
-       Role* (created in aakash handa account)
+    =>Account* (number od ramiya(sender) account)
+       Role* (created in ramiya account)
        =>Switch Role
 
 
